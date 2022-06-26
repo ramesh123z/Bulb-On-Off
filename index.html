@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Bulb</title>
+</head>
+<body>
+    <img id="myImage"  src="images/bulb_off.gif" width="100" height="180">
+    <label class="switch">
+      <input id="myImage" onclick="changeImage()" type="checkbox">
+      <span class="slider round"></span>
+  </label>
+<p>Click the Switch to turn on/off the light.</p>
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulb_on")) {
+    image.src = "images/bulb_off.gif";
+  } else {
+    image.src = "images/bulb_on.gif";
+  }
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
